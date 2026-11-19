@@ -125,8 +125,8 @@ if (contactMessageForm) {
     const message = String(formData.get("message")).trim();
     const subject = `BE A MAGNET website message from ${senderName}`;
     const body = [`Name: ${senderName}`, `Email: ${senderEmail}`, "", message].join("\n");
-    const emailUrl = `mailto:SANTHOSHNAGARATNAM@GMAIL.COM?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=SANTHOSHNAGARATNAM@GMAIL.COM&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const emailUrl = `mailto:santhoshnagarathnam@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=santhoshnagarathnam@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     const notice = document.createElement("span");
     notice.innerHTML = `Opening your email app... If it does not open, <a href="${gmailUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--home-gold,#bd9138);text-decoration:underline;font-weight:600;">click here to open Gmail</a>.`;
